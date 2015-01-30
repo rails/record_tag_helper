@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.version     = RecordTagHelper::VERSION
   spec.platform    = Gem::Platform::RUBY
   spec.summary     = %q(ActionView Record Tag Helpers)
-  spec.email       = %w(todd@t0dd.io)
+  spec.email       = 'david@loudthinking.com'
   spec.homepage    = %q(https://github.com/todd/record_tag_helper)
   spec.description = spec.summary
-  spec.authors     = ['Todd Bealmear']
+  spec.author      = 'David Heinemeier Hansson'
   spec.license     = 'MIT'
 
   spec.required_ruby_version = '>= 2.2.0'
