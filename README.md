@@ -1,6 +1,6 @@
 RecordTagHelper
 =================
-[![Build Status](https://travis-ci.org/todd/record_tag_helper.svg?branch=master)](https://travis-ci.org/todd/record_tag_helper)
+[![Build Status](https://travis-ci.org/rails/record_tag_helper.svg?branch=master)](https://travis-ci.org/rails/record_tag_helper)
 
 RecordTagHelper consists of code that was formerly a part of `ActionView`, but is being removed from Rails core for the upcoming 5.0.0 release. This gem is provided to ensure projects that use functionality from `ActionView::Helpers::RecordTagHelper` have an appropriate upgrade path.
 
