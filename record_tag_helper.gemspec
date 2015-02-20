@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.platform    = Gem::Platform::RUBY
   spec.summary     = %q(ActionView Record Tag Helpers)
   spec.email       = 'david@loudthinking.com'
-  spec.homepage    = %q(https://github.com/todd/record_tag_helper)
+  spec.homepage    = %q(https://github.com/rails/record_tag_helper)
   spec.description = spec.summary
   spec.author      = 'David Heinemeier Hansson'
   spec.license     = 'MIT'
