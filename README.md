@@ -2,7 +2,7 @@ RecordTagHelper
 =================
 [![Build Status](https://travis-ci.org/rails/record_tag_helper.svg?branch=master)](https://travis-ci.org/rails/record_tag_helper)
 
-RecordTagHelper consists of code that was formerly a part of `ActionView`, but is being removed from Rails core for the upcoming 5.0.0 release. This gem is provided to ensure projects that use functionality from `ActionView::Helpers::RecordTagHelper` have an appropriate upgrade path.
+RecordTagHelper consists of code that was formerly a part of `ActionView`, but has been removed from core in Rails 5. This gem is provided to ensure projects that use functionality from `ActionView::Helpers::RecordTagHelper` have an appropriate upgrade path.
 
 This gem provides methods for generating container tags, such as `div`, for your record. This is the recommended way of creating a container for your Active Record object, as it adds appropriate class and id attributes to that container. You can then refer to those containers easily by following that convention, instead of having to think about which class or id attribute you should use.
 
