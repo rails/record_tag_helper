@@ -17,5 +17,5 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir['CHANGELOG.md', 'LICENSE', 'README.md', 'lib/**/*']
 
-  spec.add_dependency 'rails', '~> 5.0.0.alpha'
+  spec.add_dependency 'rails', '>= 5.0.0.beta1', '< 6.0'
 end
