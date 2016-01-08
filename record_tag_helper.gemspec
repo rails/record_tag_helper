@@ -13,9 +13,12 @@ Gem::Specification.new do |spec|
   spec.author      = 'David Heinemeier Hansson'
   spec.license     = 'MIT'
 
-  spec.required_ruby_version = '>= 2.2.0'
-
   spec.files = Dir['CHANGELOG.md', 'LICENSE', 'README.md', 'lib/**/*']
 
-  spec.add_dependency 'rails', '>= 5.0.0.beta1', '< 6.0'
+  spec.add_dependency 'actionview', '>= 5.x', '< 6.0'
+
+  spec.add_development_dependency 'actionpack',  '>= 5.x', '< 6.0'
+  spec.add_development_dependency 'activemodel', '>= 5.x', '< 6.0'
+  spec.add_development_dependency 'rake',        '~> 10.4'
+  spec.add_development_dependency 'mocha',       '~> 1.1.0'
 end
