@@ -1,10 +1,5 @@
-require 'action_view'
-
-module ActionView
-  module Helpers
-    autoload :RecordTagHelper, 'action_view/helpers/record_tag_helper'
-  end
-end
+require 'active_support'
+require 'record_tag_helper/helper'
 
 ActiveSupport.on_load(:action_view) do
   include ActionView::Helpers::RecordTagHelper
