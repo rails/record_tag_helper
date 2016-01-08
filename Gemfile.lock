@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    record_tag_helper (1.0.0.alpha)
+    record_tag_helper (1.0.0)
       actionview (>= 5.x, < 6.0)
 
 GEM
