@@ -6,6 +6,8 @@ require 'action_view'
 require 'active_support/core_ext/kernel/reporting'
 require 'active_model'
 
+require 'record_tag_helper'
+
 silence_warnings do
   Encoding.default_internal = "UTF-8"
   Encoding.default_external = "UTF-8"
