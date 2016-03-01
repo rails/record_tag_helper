@@ -15,10 +15,10 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir['CHANGELOG.md', 'LICENSE', 'README.md', 'lib/**/*']
 
-  spec.add_dependency 'actionview', '>= 5.x', '< 6.0'
+  spec.add_dependency 'actionview', '~> 5.x'
 
-  spec.add_development_dependency 'actionpack',  '>= 5.x', '< 6.0'
-  spec.add_development_dependency 'activemodel', '>= 5.x', '< 6.0'
+  spec.add_development_dependency 'actionpack',  '~> 5.x'
+  spec.add_development_dependency 'activemodel', '~> 5.x'
   spec.add_development_dependency 'rake',        '~> 10.4'
   spec.add_development_dependency 'mocha',       '~> 1.1.0'
 end

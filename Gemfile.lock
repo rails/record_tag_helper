@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     record_tag_helper (1.0.0)
-      actionview (>= 5.x, < 6.0)
+      actionview (~> 5.x)
 
 GEM
   remote: https://rubygems.org/
@@ -66,8 +66,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionpack (>= 5.x, < 6.0)
-  activemodel (>= 5.x, < 6.0)
+  actionpack (~> 5.x)
+  activemodel (~> 5.x)
   mocha (~> 1.1.0)
   rake (~> 10.4)
   record_tag_helper!
