@@ -6,8 +6,8 @@ module ActionView
     module RecordTagHelper
       include ActionView::RecordIdentifier
 
-      # Produces a wrapper DIV element with id and class parameters that
-      # relate to the specified Active Record object. Usage example:
+      # Produces a wrapper element for the given tag with id and class parameters
+      # that relate to the specified Active Record object. Usage example:
       #
       #    <%= div_for(@person, class: "foo") do %>
       #       <%= @person.name %>
@@ -21,17 +21,20 @@ module ActionView
       # get iterated over and yield each record as an argument for the block.
       # For example:
       #
-      #    <%= div_for(@people, class: "foo") do |person| %>
+      #    <%= article_for(@people, class: "profile") do |person| %>
       #      <%= person.name %>
       #    <% end %>
       #
       # produces:
       #
-      #    <div id="person_123" class="person foo"> Joe Bloggs </div>
-      #    <div id="person_124" class="person foo"> Jane Bloggs </div>
+      #    <article id="person_123" class="person profile"> Joe Bloggs </article>
+      #    <article id="person_124" class="person profile"> Jane Bloggs </article>
       #
-      def div_for(record, *args, &block)
-        content_tag_for(:div, record, *args, &block)
+
+      %i(article div section span).each do |tag|
+        define_method("#{tag}_for") do |record, *args, &block|
+          content_tag_for(tag, record, *args, &block)
+        end
       end
 
       # content_tag_for creates an HTML element with id and class parameters

@@ -73,6 +73,24 @@ class RecordTagHelperTest < ActionView::TestCase
     assert_dom_equal expected, actual
   end
 
+  def test_article_for_in_erb
+    expected = %(<article class="record_tag_post special" id="record_tag_post_45">What a wonderful world!</article>)
+    actual = render_erb("<%= article_for(@post, class: 'special') do %><%= @post.body %><% end %>")
+    assert_dom_equal expected, actual
+  end
+
+  def test_section_for_in_erb
+    expected = %(<section class="record_tag_post special" id="record_tag_post_45">What a wonderful world!</section>)
+    actual = render_erb("<%= section_for(@post, class: 'special') do %><%= @post.body %><% end %>")
+    assert_dom_equal expected, actual
+  end
+
+  def test_span_for_in_erb
+    expected = %(<span class="record_tag_post special" id="record_tag_post_45">What a wonderful world!</span>)
+    actual = render_erb("<%= span_for(@post, class: 'special') do %><%= @post.body %><% end %>")
+    assert_dom_equal expected, actual
+  end
+
   def test_content_tag_for_collection
     post_1 = RecordTagPost.new { |post| post.id = 101; post.body = "Hello!" }
     post_2 = RecordTagPost.new { |post| post.id = 102; post.body = "World!" }
