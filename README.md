@@ -10,6 +10,8 @@ This gem provides methods for generating container tags, such as `div`, for your
 
 Simply add `gem 'record_tag_helper', '~> 1.0'` to your Gemfile and run `bundle install`.
 
+You may need to add `require "record_tag_helper"` to your `application.rb` file.
+
 #### `content_tag_for`
 
 Renders a container tag that relates to your Active Record Object.
