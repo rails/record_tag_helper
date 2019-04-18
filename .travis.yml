@@ -3,7 +3,15 @@ language: ruby
 sudo: false
 
 rvm:
-  - 2.2.2
-  - 2.3.0
+  - 2.2.10
+  - 2.3.8
+  - 2.4.5
+  - 2.5.4
+  - 2.6.2
 
 cache: bundler
+
+bundler_args: --jobs 3 --retry 3
+
+before_install:
+  - "rm ${BUNDLE_GEMFILE}.lock"
