@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     record_tag_helper (1.0.0)
-      actionview (>= 5)
+      actionview
 
 GEM
   remote: https://rubygems.org/
@@ -69,4 +69,4 @@ DEPENDENCIES
   record_tag_helper!
 
 BUNDLED WITH
-   1.16.6
+   1.17.3

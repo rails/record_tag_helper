@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir['CHANGELOG.md', 'LICENSE', 'README.md', 'lib/**/*']
 
-  spec.add_dependency 'actionview', '>= 5'
+  spec.add_dependency 'actionview'
 
   spec.add_development_dependency 'actionpack',  '>= 5'
   spec.add_development_dependency 'activemodel', '>= 5'
