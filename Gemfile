@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
 if RUBY_VERSION < '2.3'
@@ -10,3 +12,4 @@ end
 
 gemspec
 gem 'actionview', '~> 6.0.0'
+gem 'rubocop', '~> 0.68.0'

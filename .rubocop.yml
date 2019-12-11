@@ -1,0 +1,10 @@
+AllCops:
+  TargetRubyVersion: 2.2
+  DisabledByDefault: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always
+
+Style/RedundantFreeze:
+  Enabled: true
