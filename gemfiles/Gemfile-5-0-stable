@@ -8,5 +8,5 @@ else
   gem 'nokogiri'
 end
 
-gemspec
-gem 'actionview', '~> 6.0.0'
+gemspec path: '..'
+gem 'actionview', '~> 5.0.0'
