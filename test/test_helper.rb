@@ -14,14 +14,6 @@ silence_warnings do
 end
 
 module RenderERBUtils
-  def view
-    @view ||= begin
-      path = ActionView::FileSystemResolver.new(FIXTURE_LOAD_PATH)
-      view_paths = ActionView::PathSet.new([path])
-      ActionView::Base.new(view_paths)
-    end
-  end
-
   def render_erb(string)
     @virtual_path = nil
 
@@ -29,9 +21,8 @@ module RenderERBUtils
       string.strip,
       "test template",
       ActionView::Template::Handlers::ERB,
-      {}
+      {format: :html, locals: []}
     )
-
-    template.render(self, {}).strip
+    self.render(template: template)
   end
 end
