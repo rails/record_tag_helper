@@ -21,6 +21,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'actionpack',  '>= 5'
   spec.add_development_dependency 'activemodel', '>= 5'
-  spec.add_development_dependency 'rake',        '~> 10.4'
+  spec.add_development_dependency 'rake',        '~> 13.0'
   spec.add_development_dependency 'mocha',       '~> 1.1.0'
 end
