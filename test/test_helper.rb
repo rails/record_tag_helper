@@ -23,7 +23,7 @@ module RenderERBUtils
       string.strip,
       "test template",
       ActionView::Template::Handlers::ERB,
-      {format: :html, locals: []}
+      format: :html, locals: []
     )
     self.render(template: template)
   end
