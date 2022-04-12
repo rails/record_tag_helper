@@ -11,5 +11,11 @@ else
 end
 
 gemspec
-gem 'actionview', '~> 6.0.0'
+
+if ENV['ACTIONVIEW_VERSION']
+  gem 'actionview', "~> #{ENV['ACTIONVIEW_VERSION']}.0"
+else
+  gem 'actionview'
+end
+
 gem 'rubocop', '~> 0.68.0'
