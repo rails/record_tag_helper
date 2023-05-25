@@ -10,6 +10,8 @@ else
   gem 'nokogiri'
 end
 
+gem 'loofah', RUBY_VERSION < '2.5' ? '< 2.21.0' : '>= 0'
+
 gemspec
 
 if ENV['ACTIONVIEW_VERSION']
