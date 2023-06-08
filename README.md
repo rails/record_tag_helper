@@ -67,7 +67,7 @@ Will generate this HTML output:
 
 #### `div_for`
 
-This is actually a convenient method which calls `content_tag_for` internally with `:div` as the tag name. You can pass either an Active Record object or a collection of objects. For example:
+This is actually a convenient method which calls `content_tag_for` internally with `:div` as the tag name. You can pass either an Active Record object, or a collection of objects. For example:
 
 ```html+erb
 <%= div_for(@article, class: "frontpage") do %>
